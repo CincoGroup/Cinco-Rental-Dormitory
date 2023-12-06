@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rental Dormitory</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('about')">About Us</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('rooms')">Rooms</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('contact')">Contact Information</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToReservation()">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <img src="BANNER1.png" alt="Banner Image">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>"Explore our Boarding System </br>
+                Your one-stop destination for discovering the ideal rental dormitory. 
+                We're committed to simplifying your search with a user-friendly platform, 
+                offering diverse options that align with your preferences and budget. 
+                Whether you're a student or a professional, 
+                find your perfect living space effortlessly. 
+                Start your search now for a hassle-free housing experience!"</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Availabe Rooms</h2>
+        <div class="room-grid">
+            <div class="room">
+                <img src="img.jpg" alt="Room 1">
+                <p>Boarding House 1</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1000.0 per month</p>
+            </div>
+            <div class="room">
+                <img src="img2.jpg" alt="Room 2">
+                <p>Boarding House 2</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1100.0 per month</p>
+            </div>
+            <div class="room">
+                <img src="img3.jpg" alt="Room 3">
+                <p>Boarding House 3</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1400.0 per month</p>
+            </div>
+            <div class="room">
+                <img src="img4.jpg" alt="Room 4">
+                <p>Boarding House 4</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1000.0 per month</p>
+            </div>
+            <div class="room">
+                <img src="img5.jpg" alt="Room 5">
+                <p>Boarding House 5</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1200.0 per month</p>
+            </div>
+            <div class="room">
+                <img src="img6.jpg" alt="Room 6">
+                <p>Boarding House 6</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1100.0 per month</p>
+            </div>
+            <div class="room">
+                <img src="img7.jpg" alt="Room 7">
+                <p>Boarding House 7</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1200.0 per month</p>
+            </div>
+            <div class="room">
+                <img src="img8.jpg" alt="Room 8">
+                <p>Boarding House 8</p>
+                <p>
+                    San Agustin, Purok 2,<br>
+                    Magalang, Pampanga.
+                </p>
+                <p>Php. 1000.0 per month</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="reservation">
+        <form action="process_reservation.php" method="post" onsubmit="return validateForm()">
+        <h2>Reservation</h2>
+        <label for="reservationName">Name:</label>
+        <input type="text" id="reservationName" name="name" required>
+
+        <label for="reservationContactNumber">Contact Number:</label>
+        <input type="tel" id="reservationContactNumber" name="contact_number" required>
+
+        <label for="reservationRoomNumber">Room Number:</label>
+        <input type="number" id="reservationRoomNumber" name="room_number" required>
+
+        <label for="reservationCheckInDate">Check-in Date:</label>
+        <input type="date" id="reservationCheckInDate" name="check_in_date" required>
+
+        <label for="reservationGender">Gender:</label>
+        <select id="reservationGender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="reservationType">Type:</label>
+        <div id="typeButtons">
+            <label><input type="radio" name="type" value="1-2pax" checked>1-2 Pax</label>
+            <label><input type="radio" name="type" value="3-4pax">3-4 Pax</label>
+            <label><input type="radio" name="type" value="5+pax">5+ Pax</label>
+        </div>
+        <input type="submit" value="Submit Reservation">
+    </section>
+    </form>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <ul class="contact-info">
+            <p>Have questions or need assistance? We're here to help! Feel free to reach out through any of the following channels:</p>
+    
+            <h3>Email:</h3>
+            <p>General Inquiries: <a href="mailto:boarding@cinco.com">boarding@cinco.com</a></p>
+            <p>Customer Support: <a href="mailto:support@cinco.com">support@cinco.com</a></p>
+    
+            <h3>Connect With Us:</h3>
+            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+    
+            <p>We value your feedback and look forward to assisting you!</p>
+    </section>
+</body>
+<script>
+    function validateForm() {
+        var name = document.getElementById('reservationName').value;
+        var contactNumber = document.getElementById('reservationContactNumber').value;
+        var roomNumber = document.getElementById('reservationRoomNumber').value;
+        var checkInDate = document.getElementById('reservationCheckInDate').value;
+
+        if (name === '' || contactNumber === '' || roomNumber === '' || checkInDate === '') {
+            alert('Please fill in all required fields.');
+            return false;
+        }
+
+        // Add more specific validation as needed.
+
+        return true;
+    }
+</script>
+</html>
