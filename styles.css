@@ -201,3 +201,37 @@
 	max-width: 100%;
 	height: auto;
 	}
+
+	.testimonial__container {
+		text-align: center;
+	  }
+	  
+	  .swiper {
+		width: 100%;
+		margin-top: 4rem;
+		padding-bottom: 4rem;
+	  }
+	  
+	  .testimonial__card {
+		max-width: 600px;
+		margin: auto;
+	  }
+	  
+	  .testimonial__card img {
+		max-width: 100px;
+		margin: auto;
+		margin-bottom: 1rem;
+		border-radius: 100%;
+		box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
+	  }
+	  
+	  .testimonial__card p {
+		margin-bottom: 1rem;
+		color: white;
+	  }
+	  
+	  .testimonial__card h4 {
+		font-size: 1.2rem;
+		font-weight: 500;
+		color: var(--primary-color);
+	  }

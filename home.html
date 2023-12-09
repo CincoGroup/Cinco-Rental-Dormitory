@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="home.js"></script>
 </head>
@@ -143,6 +145,42 @@
     </section>
     </form>
 
+
+    <section class="section__container testimonial__container" id="client">
+        <p class="section__subheader"> Swipe</p>
+        <h2 class="section__header">The Developers</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="testimonial__card">
+                <img src="del.jpg" alt="testimonial" />
+                <h4>- Kabiling Randel Lance M.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial__card">
+                <img src="sam.jpg" alt="testimonial" />
+                <h4>-Ditchoso Samanta P.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial__card">
+                <img src="tel.jpg" alt="testimonial" />
+                <h4>- Pace krystelle S.</h4>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    
+    
+
+
     <section id="contact">
         <h2>Contact Information</h2>
         <ul class="contact-info">
@@ -157,8 +195,33 @@
     
             <p>We value your feedback and look forward to assisting you!</p>
     </section>
-</body>
+   
+
 <script>
+   
+   
+    // Initialize Swiper once the DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        function validateForm() {
+            // Validation logic goes here
+        }
+
+        function validateForm() {
+            var name = document.getElementById('reservationName').value;
+            // ... rest of the validation logic ...
+            return true;
+        }
+    });
+
+    
+    
     function validateForm() {
         var name = document.getElementById('reservationName').value;
         var contactNumber = document.getElementById('reservationContactNumber').value;
@@ -175,4 +238,6 @@
         return true;
     }
 </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
 </html>

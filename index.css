@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.success-message {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dff0d8; /* Bootstrap success alert background color */
+    border: 1px solid #3c763d; /* Bootstrap success alert border color */
+    color: #3c763d; /* Bootstrap success alert text color */
+    max-width: 400px;
+}
+
+.success-message h2 {
+    color: #3c763d; /* Bootstrap success alert text color */
+}
+
+.success-message a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #337ab7; /* Bootstrap primary button background color */
+   
+}
